@@ -4,7 +4,7 @@ import java.util.ArrayList;
 
 public class TxtReader implements Reader{
 
-	public ArrayList readFile() {
+	public ArrayList<String> readFile() {
 		// TODO Auto-generated method stub
 		return null;
 	}
