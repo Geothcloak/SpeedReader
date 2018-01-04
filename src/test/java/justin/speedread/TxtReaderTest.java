@@ -1,4 +1,5 @@
 package justin.speedread;
+import java.io.File;
 import java.util.ArrayList;
 import org.junit.Before;
 import org.junit.Test;
@@ -11,13 +12,23 @@ public class TxtReaderTest {
 	@Before
 	public void init() {
 		txtReaderUnderTest = new TxtReader();
+		
 	}
 	@Test
 	public void canReadTxt() {
 		ArrayList<String> methodArray = new ArrayList<String>();
-		methodArray = txtReaderUnderTest.readFile();
+		
+		File txtTestFile = new File("C:/git/SpeedReader/ebooks/txtTestFile.txt");
+		methodArray = txtReaderUnderTest.readFile(txtTestFile);
 		
 		ArrayList<String> testArray = new ArrayList<String>();
+		testArray.add("hi");
+		testArray.add("hi2");
+		testArray.add("hi3");
+		
+		
+		//System.out.println(testArray.toString());
+		
 		Assert.assertEquals(testArray, methodArray);
 	}
 }
