@@ -18,7 +18,7 @@ public class TxtReaderTest {
 	public void canReadTxt() {
 		ArrayList<String> methodArray = new ArrayList<String>();
 		
-		File txtTestFile = new File("C:/git/SpeedReader/ebooks/txtTestFile.txt");
+		File txtTestFile = new File("C:\\git\\SpeedReader\\ebooks\\txtTest.txt");
 		methodArray = txtReaderUnderTest.readFile(txtTestFile);
 		
 		ArrayList<String> testArray = new ArrayList<String>();
